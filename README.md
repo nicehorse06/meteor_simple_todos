@@ -1,9 +1,7 @@
-meteor 版本為 1.7.0
-
-位於 ~/.meteor/
+meteor 版本為 1.7.0, 位於 ~/.meteor/
 
 
-如果執行的 meteor 是跟 React 一起用的，需加上指令
+如果執行的 meteor 是跟 React 一起用的，需加上指令才能執行,這算是bug,[來源網址](https://stackoverflow.com/questions/44507161/meteor-react-error-target-container-is-not-a-dom-element-after-fix)
 ```
 meteor remove blaze-html-templates
 meteor add static-html
