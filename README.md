@@ -1,5 +1,5 @@
 meteor 版本為 1.7.0, 位於 ~/.meteor/
-
+實作[參考網址](https://www.meteor.com/tutorials/react/creating-an-app)
 
 如果執行的 meteor 是跟 React 一起用的，需加上指令才能執行,這算是bug,[來源網址](https://stackoverflow.com/questions/44507161/meteor-react-error-target-container-is-not-a-dom-element-after-fix)
 ```
@@ -15,6 +15,15 @@ meteor create {file-name}
 在建構的檔案底下跑一個執行於 http://localhost:3000/ 的 hot loading server
 ```
 meteor
+```
+
+如果要在 mongoDB console 加資料，以下指令
+```
+// 進入 mongo console
+meteor mongo
+
+// 在mongo console底下塞新資料
+meteor:PRIMARY> db.tasks.insert({ text: "jimmy hello", createdAt: new Date() });
 ```
 
 目錄結構：
